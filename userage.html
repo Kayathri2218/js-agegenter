@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta content="width=dives-width, initial-scale=1.0">
+    <title>string only show</title>
+</head>
+
+<body>
+    <script>
+        document.write('<br>');
+        document.write('<br>');
+
+        //6. user input
+        document.write("User input : ");
+        let age = parseInt(prompt("Enter your age : "));
+        let sex = prompt("Enter your sex : ");
+        if (sex == "female") {
+            document.write("Urban areas");
+        }
+        else if (sex == "male" && 20 <= age && age <= 40) {
+            document.write("Anywhere");
+        }
+        else if (sex == "male" && 40 <= age && age <= 60) {
+            document.write("Urban areas");
+        }
+        else {
+            document.write("Error");
+        }
+    </script>
+</body>
+
+</html>
